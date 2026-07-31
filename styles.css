@@ -181,7 +181,7 @@ a { color: var(--teal-deep); }
 }
 .tag-pop { background: var(--teal-ink); }
 .hero-copy h1 { font-size: clamp(1.85rem, 3.6vw, 2.6rem); font-weight: 600; }
-.hero-copy h1 .hl { color: var(--yellow-deep); font-style: italic; }
+.hero-copy h1 .hl { color: var(--yellow-deep); }
 .hero-lede { font-size: 1.08rem; color: var(--muted); max-width: 32rem; margin: 0.6rem 0 1.5rem; }
 .hero-note { margin-top: 1.1rem; color: var(--muted); font-weight: 600; font-size: 0.98rem; }
 .hero-note a { color: var(--teal-deep); font-weight: 700; }
@@ -231,7 +231,7 @@ a { color: var(--teal-deep); }
 }
 .path-card.big .path-icon { background: var(--yellow-deep); }
 .path-card h2 { font-size: 1.5rem; }
-.path-sub { font-family: var(--font-display); font-style: italic; font-weight: 500; color: var(--yellow-deep); margin: 0 0 0.7rem; }
+.path-sub { font-family: var(--font-display); font-weight: 600; color: var(--yellow-deep); margin: 0 0 0.7rem; }
 .path-card.little .path-sub { color: var(--teal-deep); }
 .path-card p { color: var(--muted); margin: 0 0 1.3rem; }
 .ribbon {
@@ -362,7 +362,7 @@ a { color: var(--teal-deep); }
 }
 .stars { color: var(--yellow); margin-bottom: 0.6rem; letter-spacing: 2px; }
 .quote blockquote { margin: 0 0 0.8rem; padding: 0; border: 0; color: var(--ink); font-size: 1rem; }
-.quote figcaption { font-family: var(--font-display); font-style: italic; font-weight: 600; color: var(--teal-deep); }
+.quote figcaption { font-family: var(--font-display); font-weight: 600; color: var(--teal-deep); }
 
 /* ---------- FAQ ---------- */
 .faq { padding: clamp(2.5rem, 6vw, 4rem) 0; }

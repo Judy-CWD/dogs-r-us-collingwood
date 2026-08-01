@@ -187,16 +187,42 @@ a { color: var(--teal-deep); }
 .hero-note a { color: var(--teal-deep); font-weight: 700; }
 
 .hero-photo { position: relative; }
-.hero-photo img {
-  width: 100%; aspect-ratio: 4 / 3.4; object-fit: cover;
+.hero-stack {
+  position: relative;
   border-radius: var(--radius-lg);
-  border: 6px solid var(--white); box-shadow: var(--shadow);
+  border: 6px solid var(--white);
+  box-shadow: var(--shadow);
+  overflow: hidden;
+}
+.hero-slide {
+  width: 100%; aspect-ratio: 4 / 3.4; object-fit: cover;
+}
+.hero-slide-alt {
+  position: absolute; inset: 0; height: 100%;
+  opacity: 0;
+  animation: hero-crossfade 11s ease-in-out infinite;
+}
+@keyframes hero-crossfade {
+  0%, 40% { opacity: 0; }
+  50%, 90% { opacity: 1; }
+  100% { opacity: 0; }
 }
 .hero-badge {
   position: absolute; bottom: -18px; left: -12px;
+  min-width: 140px;
   background: var(--yellow); color: var(--teal-ink);
   border-radius: 18px; padding: 0.6rem 1rem; box-shadow: var(--shadow);
   transform: rotate(-4deg); text-align: center;
+  animation: hero-crossfade-out 11s ease-in-out infinite;
+}
+.hero-badge-alt {
+  opacity: 0;
+  animation: hero-crossfade 11s ease-in-out infinite;
+}
+@keyframes hero-crossfade-out {
+  0%, 40% { opacity: 1; }
+  50%, 90% { opacity: 0; }
+  100% { opacity: 1; }
 }
 .hero-badge span { display: block; font-family: var(--font-display); font-weight: 700; font-size: 1.1rem; line-height: 1.15; }
 .hero-badge small { font-weight: 700; font-size: 0.68rem; text-transform: uppercase; letter-spacing: 0.05em; }
@@ -449,5 +475,7 @@ a { color: var(--teal-deep); }
 /* ---------- Motion ---------- */
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
-  * { transition: none !important; }
+  * { transition: none !important; animation: none !important; }
+  .hero-slide-alt, .hero-badge-alt { opacity: 0; }
+  .hero-badge { opacity: 1; }
 }

@@ -1,6 +1,6 @@
 # Dogs R Us Collingwood
 
-> Dog daycare in Collingwood for little and big dogs. Small dog daycare, big dog daycare, puppy daycare, dog walking, and dog boarding in Collingwood (little dogs only). Owner-operated by Tracie.
+> Dog daycare in Collingwood serving Grey County and the Georgian Bay area (including Thornbury and The Blue Mountains). Small dog daycare, big dog daycare, puppy daycare, dog walking, and dog boarding (little dogs only). Owner-operated by Tracie.
 
 Site: https://dogsruscollingwood.com/
 Preview: https://collingwood-web-design.github.io/dogs-r-us-collingwood-pages/
@@ -12,7 +12,15 @@ Payment: Square at drop-off / e-transfer to Info@DogsRUsCollingwood.com
 
 ## About
 
-Dogs R Us Collingwood offers dog daycare in Collingwood with separate small dog daycare and big dog daycare areas. Big dog daycare opens August 10, 2026. Puppy daycare is available from 4 months with required vaccines. The two size groups never mix. Every dog needs a Meet & Greet and a signed waiver before daycare.
+Dogs R Us Collingwood offers dog daycare in Collingwood with separate small dog daycare and big dog daycare areas. Proudly serving Grey County and the Georgian Bay area, including Collingwood, Thornbury and The Blue Mountains. Big dog daycare opens August 10, 2026. Puppy daycare is available from 4 months with required vaccines. The two size groups never mix. Every dog needs a Meet & Greet and a signed waiver before daycare.
+
+## Service area
+
+- Collingwood
+- Thornbury
+- The Blue Mountains
+- Grey County
+- Georgian Bay area
 
 ## Services
 

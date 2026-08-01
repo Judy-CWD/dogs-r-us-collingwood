@@ -725,6 +725,13 @@ a.svc-card:focus-visible {
   margin: 0 0 1.5rem;
 }
 .final-cta .btn { box-shadow: var(--shadow-sm); }
+.final-cta-serve {
+  margin: 1.35rem 0 0 !important;
+  font-size: 0.9rem !important;
+  color: var(--teal-deep) !important;
+  max-width: 28rem;
+  margin-inline: auto !important;
+}
 
 /* ---------- Footer ---------- */
 .site-footer { background: #21484c; color: rgba(255,255,255,0.85); text-align: center; padding: 2.4rem var(--pad); }

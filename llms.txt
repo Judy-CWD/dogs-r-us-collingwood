@@ -1,0 +1,38 @@
+# Dogs R Us Collingwood
+
+> Homey doggie daycare in Collingwood, Ontario for little and big dogs. Overnight boarding (little dogs only), dog walking, house-made freeze-dried treats, and spaw treatments. Owner-operated by Tracie.
+
+Site: https://dogsruscollingwood.com/
+Preview: https://collingwood-web-design.github.io/dogs-r-us-collingwood-pages/
+Phone: +1-705-606-4145
+Email: Info@DogsRUsCollingwood.com
+Address: 14 Balsam St, Collingwood, ON L9Y 4H7, Canada
+Hours: Mon–Fri 7:00–18:00; Sat 8:00–16:00; Sun closed
+Payment: Square at drop-off / e-transfer to Info@DogsRUsCollingwood.com
+
+## About
+
+Dogs R Us Collingwood is a clean, safe daycare with separate areas for little dogs (18″ paw-to-back or under) and big dogs. Big dog daycare opens August 10, 2026. The two size groups never mix. Every dog needs a Meet & Greet and a signed waiver before daycare.
+
+## Services
+
+- Doggie daycare (little and big dogs) — full day $50, half day $30 (up to 5 hrs), shoppers special $20 (up to 3 hrs); +HST
+- Dog walking (little and big dogs, same rates) — 15 min $10, 30 min $15, 5-walk package $65, 10-walk package $130
+- Overnight boarding — little dogs only — $75 +HST / 24 hours (includes a full daycare day)
+- Spaw treatments (by size) — teeth brushing $15; bath/brush/ears $25 little / $45 big; paw balm $10 little / $15 big; full spaw $45 little / $70 big
+- Treats R Us — house-made freeze-dried single-ingredient treats; shipping available
+
+## Booking
+
+No online booking forms. Call or text Tracie at 705-606-4145. Documents: waiver and policy PDFs linked from the site FAQ.
+
+## Social
+
+- Facebook: https://www.facebook.com/profile.php?id=61563112560390
+- Instagram: https://www.instagram.com/dogsruscollingwoodon/
+- YouTube: https://www.youtube.com/@dogsruscollingwood
+
+## Optional
+
+- Sitemap: /sitemap.xml
+- Robots: /robots.txt

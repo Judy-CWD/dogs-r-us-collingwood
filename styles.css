@@ -201,6 +201,28 @@ a { color: var(--teal-deep); }
 .hero-badge span { display: block; font-family: var(--font-display); font-weight: 700; font-size: 1.1rem; line-height: 1.15; }
 .hero-badge small { font-weight: 700; font-size: 0.68rem; text-transform: uppercase; letter-spacing: 0.05em; }
 
+/* ---------- Separate areas notice ---------- */
+.separate-note {
+  background: var(--cream);
+  border-top: 1px solid rgba(232, 154, 38, 0.25);
+  border-bottom: 1px solid rgba(232, 154, 38, 0.25);
+  padding: 1.15rem 0;
+}
+.separate-note p {
+  margin: 0;
+  text-align: center;
+  color: var(--teal-ink);
+  font-weight: 600;
+  font-size: 1.02rem;
+  line-height: 1.55;
+  max-width: 52rem;
+  margin-inline: auto;
+}
+.separate-note i {
+  color: var(--yellow-deep);
+  margin-right: 0.45rem;
+}
+
 /* ---------- Trust strip ---------- */
 .trust { background: var(--teal-ink); color: var(--white); }
 .trust-row {

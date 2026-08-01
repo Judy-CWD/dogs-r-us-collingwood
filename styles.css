@@ -182,7 +182,11 @@ a { color: var(--teal-deep); }
   display: grid; gap: 2rem; align-items: center;
   padding: clamp(2.5rem, 6vw, 4.5rem) 0;
 }
-@media (min-width: 900px) { .hero-grid { grid-template-columns: 1.05fr 0.95fr; gap: 3rem; } }
+.hero-photo { order: -1; }
+@media (min-width: 900px) {
+  .hero-grid { grid-template-columns: 1.05fr 0.95fr; gap: 3rem; }
+  .hero-photo { order: 0; }
+}
 
 .tag {
   display: inline-flex; align-items: center; gap: 0.45rem;
@@ -347,7 +351,7 @@ a { color: var(--teal-deep); }
 .carousel-slide:not(:first-child) {
   position: absolute; inset: 0; height: 100%;
   opacity: 0;
-  animation: welcome-fade 28s ease-in-out infinite;
+  animation: welcome-fade 32s ease-in-out infinite;
 }
 .carousel-slide:nth-child(2) { animation-delay: 4s; }
 .carousel-slide:nth-child(3) { animation-delay: 8s; }
@@ -355,10 +359,11 @@ a { color: var(--teal-deep); }
 .carousel-slide:nth-child(5) { animation-delay: 16s; }
 .carousel-slide:nth-child(6) { animation-delay: 20s; }
 .carousel-slide:nth-child(7) { animation-delay: 24s; }
+.carousel-slide:nth-child(8) { animation-delay: 28s; }
 @keyframes welcome-fade {
   0% { opacity: 0; }
-  5%, 14.286% { opacity: 1; }
-  19.286%, 100% { opacity: 0; }
+  4%, 12.5% { opacity: 1; }
+  16.5%, 100% { opacity: 0; }
 }
 .welcome-copy h2 { font-size: clamp(1.45rem, 2.6vw, 1.9rem); }
 .welcome-copy > p { color: var(--muted); }
@@ -569,17 +574,6 @@ a.svc-card:focus-visible {
 .site-footer img { margin: 0 auto 0.9rem; width: min(220px, 65vw); }
 .site-footer p { margin: 0.3rem 0; font-size: 0.92rem; }
 .credit a { color: var(--yellow); font-weight: 700; text-decoration: none; }
-
-/* ---------- Sticky mobile CTA ---------- */
-.sticky-cta {
-  position: fixed; left: 12px; right: 12px; bottom: 12px; z-index: 60;
-  display: flex; align-items: center; justify-content: center; gap: 0.5rem;
-  padding: 0.9rem 1rem; border-radius: 999px;
-  background: var(--yellow); color: var(--teal-ink);
-  font-family: var(--font-body); font-weight: 700; font-size: 0.95rem; text-decoration: none;
-  box-shadow: 0 12px 28px -8px rgba(35,75,79,0.6);
-}
-@media (min-width: 700px) { .sticky-cta { display: none; } }
 
 /* ---------- Motion ---------- */
 @media (prefers-reduced-motion: reduce) {

@@ -475,17 +475,19 @@ a.svc-card:focus-visible {
 
 /* ---------- Pricing ---------- */
 .pricing { padding: clamp(2.5rem, 6vw, 4rem) 0; background: var(--sky); }
-.price-table-wrap { overflow-x: auto; border-radius: var(--radius); box-shadow: var(--shadow-sm); }
+.price-table-wrap { overflow-x: visible; border-radius: var(--radius); box-shadow: var(--shadow-sm); }
 .price-table {
   width: 100%; border-collapse: collapse; background: var(--white);
-  min-width: 420px; overflow: hidden; border-radius: var(--radius);
+  table-layout: fixed; overflow: hidden; border-radius: var(--radius);
 }
 .price-table thead th {
   background: var(--teal-ink); color: var(--white);
   font-family: var(--font-display); font-weight: 600; font-size: 0.98rem;
   padding: 1rem 1.2rem; text-align: center;
 }
-.price-table thead th:first-child { text-align: left; }
+.price-table thead th:first-child { text-align: left; width: 40%; }
+.price-table thead th:nth-child(2),
+.price-table thead th:nth-child(3) { width: 30%; }
 .price-table thead th small { font-weight: 600; opacity: 0.8; font-size: 0.72rem; display: block; }
 .price-table thead th i { margin-right: 0.35rem; }
 .price-table thead th.col-little,
@@ -497,11 +499,30 @@ a.svc-card:focus-visible {
 .price-table thead th.col-big i,
 .price-table thead th:nth-child(3) i { color: var(--teal-ink); }
 .price-table thead th.col-big small { color: var(--teal-ink); opacity: 0.75; }
-.price-table tbody td { padding: 0.95rem 1.2rem; text-align: center; border-top: 1px solid var(--line); font-weight: 700; color: var(--teal-ink); }
+.price-table tbody td { padding: 0.95rem 1.2rem; text-align: center; border-top: 1px solid var(--line); font-weight: 700; color: var(--teal-ink); word-wrap: break-word; }
 .price-table tbody td:nth-child(3) { color: var(--yellow-deep); }
 .price-table tbody td:first-child { text-align: left; font-weight: 600; color: var(--ink); }
 .price-table tbody tr:nth-child(even) { background: #fafdfd; }
-.price-table .muted { color: var(--muted); font-weight: 400; font-size: 0.88rem; }
+.price-table .muted { color: var(--muted); font-weight: 400; font-size: 0.88rem; display: block; }
+
+@media (max-width: 640px) {
+  .price-table thead th {
+    font-size: 0.78rem;
+    padding: 0.7rem 0.4rem;
+    line-height: 1.25;
+  }
+  .price-table thead th i { display: none; }
+  .price-table thead th small { font-size: 0.62rem; margin-top: 0.15rem; }
+  .price-table thead th:first-child { width: 38%; }
+  .price-table thead th:nth-child(2),
+  .price-table thead th:nth-child(3) { width: 31%; }
+  .price-table tbody td {
+    padding: 0.7rem 0.4rem;
+    font-size: 0.9rem;
+  }
+  .price-table tbody td:first-child { font-size: 0.82rem; }
+  .price-table .muted { font-size: 0.72rem; }
+}
 
 .walk-grid { display: grid; gap: 1.1rem; grid-template-columns: repeat(2, 1fr); }
 @media (min-width: 780px) { .walk-grid { grid-template-columns: repeat(4, 1fr); } }

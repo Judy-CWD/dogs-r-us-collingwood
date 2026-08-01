@@ -313,6 +313,8 @@ a { color: var(--teal-deep); }
   position: relative; overflow: hidden;
   border-radius: var(--radius-lg); padding: 2.2rem 1.8rem;
   box-shadow: var(--shadow); text-align: center;
+  display: flex; flex-direction: column; align-items: center;
+  height: 100%;
 }
 .path-card.little { background: linear-gradient(160deg, var(--sky), #dff0f0); }
 .path-card.big { background: linear-gradient(160deg, var(--cream), #ffe9c4); }
@@ -325,7 +327,8 @@ a { color: var(--teal-deep); }
 .path-card h2 { font-size: 1.5rem; }
 .path-sub { font-family: var(--font-display); font-weight: 600; color: var(--yellow-deep); margin: 0 0 0.7rem; }
 .path-card.little .path-sub { color: var(--teal-deep); }
-.path-card p { color: var(--muted); margin: 0 0 1.3rem; }
+.path-card > p:not(.path-sub) { color: var(--muted); margin: 0; flex: 1 1 auto; }
+.path-card .btn { margin-top: 1.3rem; width: 100%; }
 .ribbon {
   position: absolute; top: 16px; right: -34px; transform: rotate(35deg);
   background: var(--yellow); color: var(--teal-ink);

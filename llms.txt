@@ -1,6 +1,6 @@
 # Dogs R Us Collingwood
 
-> Dog daycare in Collingwood serving Grey County and the Georgian Bay area (including Thornbury and The Blue Mountains). Small dog daycare, big dog daycare, puppy daycare, dog walking, and dog boarding (little dogs only). Owner-operated by Tracie.
+> Dog daycare in Collingwood, Ontario serving Blue Mountain, Wasaga Beach, Clearview and Thornbury. Small dog daycare, big dog daycare, puppy daycare, dog walking, and dog boarding (little dogs only). Owner-operated by Tracie.
 
 Site: https://dogsruscollingwood.com/
 Preview: https://collingwood-web-design.github.io/dogs-r-us-collingwood-pages/
@@ -10,17 +10,26 @@ Address: 14 Balsam St, Collingwood, ON L9Y 4H7, Canada
 Hours: Mon–Fri 7:00–18:00; Sat 8:00–16:00; Sun closed
 Payment: Square at drop-off / e-transfer to Info@DogsRUsCollingwood.com
 
+## Pages
+
+- Home: /
+- Little Dog Daycare: /little-dog-daycare.html
+- Big Dog Daycare: /big-dog-daycare.html
+- Dog Walking: /dog-walking.html
+- Dog Spa Services: /dog-spa-services.html
+
 ## About
 
-Dogs R Us Collingwood offers dog daycare in Collingwood with separate small dog daycare and big dog daycare areas. Proudly serving Grey County and the Georgian Bay area, including Collingwood, Thornbury and The Blue Mountains. Big dog daycare opens August 10, 2026. Puppy daycare is available from 4 months with required vaccines. The two size groups never mix. Every dog needs a Meet & Greet and a signed waiver before daycare.
+Dogs R Us Collingwood offers dog daycare in Collingwood, Ontario with separate small dog daycare and big dog daycare areas. Proudly serving Collingwood, Ontario — including Blue Mountain, Wasaga Beach, Clearview and Thornbury. Big dog daycare opens August 10, 2026. Puppy daycare is available from 4 months with required vaccines. The two size groups never mix. Every dog needs a Meet & Greet and a signed waiver before daycare.
 
 ## Service area
 
-- Collingwood
+- Collingwood, Ontario
+- Blue Mountain / The Blue Mountains
+- Wasaga Beach
+- Clearview
 - Thornbury
-- The Blue Mountains
-- Grey County
-- Georgian Bay area
+- Grey County / Georgian Bay area
 
 ## Services
 

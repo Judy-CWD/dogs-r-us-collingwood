@@ -16,4 +16,10 @@
 
   var year = document.getElementById("year");
   if (year) year.textContent = new Date().getFullYear();
+
+  var heroVideo = document.querySelector(".hero-video");
+  if (heroVideo && window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+    heroVideo.removeAttribute("autoplay");
+    heroVideo.pause();
+  }
 })();

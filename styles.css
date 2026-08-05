@@ -206,7 +206,6 @@ a { color: var(--teal-deep); }
   z-index: 50;
   background: rgba(255, 255, 255, 0.92);
   backdrop-filter: blur(10px);
-  border-bottom: 1px solid var(--line);
 }
 .header-inner {
   width: min(100% - (var(--pad) * 2), var(--wrap));
@@ -330,12 +329,12 @@ a { color: var(--teal-deep); }
 .hero-video {
   display: block;
   width: 100%;
-  aspect-ratio: 4 / 5;
+  aspect-ratio: 4 / 4.6;
   object-fit: cover;
   object-position: center;
 }
 @media (min-width: 900px) {
-  .hero-video { aspect-ratio: 5 / 6; }
+  .hero-video { aspect-ratio: 5 / 5.5; }
 }
 .hero-badge {
   position: absolute; bottom: -14px; left: -8px;
@@ -344,6 +343,11 @@ a { color: var(--teal-deep); }
   border-radius: 18px; padding: 0.6rem 1rem; box-shadow: var(--shadow);
   transform: rotate(-4deg); text-align: center;
   z-index: 2;
+  animation: hero-badge-float 2.8s ease-in-out infinite;
+}
+@keyframes hero-badge-float {
+  0%, 100% { transform: rotate(-5deg) translateY(0) scale(1); }
+  50% { transform: rotate(-1deg) translateY(-12px) scale(1.04); }
 }
 .hero-badge span { display: block; font-family: var(--font-display); font-weight: 700; font-size: 1.1rem; line-height: 1.15; }
 .hero-badge small { font-weight: 700; font-size: 0.68rem; text-transform: uppercase; letter-spacing: 0.05em; }
@@ -445,12 +449,25 @@ a { color: var(--teal-deep); }
 .welcome { padding: clamp(2rem, 5vw, 3.5rem) 0; }
 .welcome-grid { display: grid; gap: 2.2rem; align-items: center; }
 @media (min-width: 880px) { .welcome-grid { grid-template-columns: 0.95fr 1.05fr; } }
+.welcome-photo { position: relative; }
 .welcome-photo .carousel {
   position: relative;
   border-radius: var(--radius-lg);
+  border: 6px solid var(--yellow);
   overflow: hidden;
   box-shadow: var(--shadow);
 }
+.welcome-badge {
+  position: absolute; bottom: -14px; left: -8px;
+  min-width: 140px;
+  background: var(--yellow); color: var(--teal-ink);
+  border-radius: 18px; padding: 0.6rem 1rem; box-shadow: var(--shadow);
+  transform: rotate(-4deg); text-align: center;
+  z-index: 2;
+  animation: hero-badge-float 2.8s ease-in-out infinite;
+}
+.welcome-badge span { display: block; font-family: var(--font-display); font-weight: 700; font-size: 1.1rem; line-height: 1.15; }
+.welcome-badge small { font-weight: 700; font-size: 0.68rem; text-transform: uppercase; letter-spacing: 0.05em; }
 .carousel-slide {
   width: 100%; aspect-ratio: 4 / 4.2; object-fit: cover;
   display: block;
@@ -458,7 +475,7 @@ a { color: var(--teal-deep); }
 .carousel-slide:not(:first-child) {
   position: absolute; inset: 0; height: 100%;
   opacity: 0;
-  animation: welcome-fade 32s ease-in-out infinite;
+  animation: welcome-fade 28s ease-in-out infinite;
 }
 .carousel-slide:nth-child(2) { animation-delay: 4s; }
 .carousel-slide:nth-child(3) { animation-delay: 8s; }
@@ -466,7 +483,6 @@ a { color: var(--teal-deep); }
 .carousel-slide:nth-child(5) { animation-delay: 16s; }
 .carousel-slide:nth-child(6) { animation-delay: 20s; }
 .carousel-slide:nth-child(7) { animation-delay: 24s; }
-.carousel-slide:nth-child(8) { animation-delay: 28s; }
 @keyframes welcome-fade {
   0% { opacity: 0; }
   4%, 12.5% { opacity: 1; }

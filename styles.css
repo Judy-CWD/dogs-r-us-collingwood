@@ -452,6 +452,7 @@ a { color: var(--teal-deep); }
 .welcome-photo { position: relative; }
 .welcome-photo .carousel {
   position: relative;
+  aspect-ratio: 4 / 4.2;
   border-radius: var(--radius-lg);
   border: 6px solid var(--yellow);
   overflow: hidden;
@@ -469,24 +470,28 @@ a { color: var(--teal-deep); }
 .welcome-badge span { display: block; font-family: var(--font-display); font-weight: 700; font-size: 1.1rem; line-height: 1.15; }
 .welcome-badge small { font-weight: 700; font-size: 0.68rem; text-transform: uppercase; letter-spacing: 0.05em; }
 .carousel-slide {
-  width: 100%; aspect-ratio: 4 / 4.2; object-fit: cover;
+  position: absolute; inset: 0;
+  width: 100%; height: 100%;
+  object-fit: cover;
   display: block;
-}
-.carousel-slide:not(:first-child) {
-  position: absolute; inset: 0; height: 100%;
   opacity: 0;
-  animation: welcome-fade 28s ease-in-out infinite;
+  animation: welcome-fade 28s linear infinite;
+  animation-fill-mode: both;
 }
+.carousel-slide:nth-child(1) { animation-delay: 0s; opacity: 1; }
 .carousel-slide:nth-child(2) { animation-delay: 4s; }
 .carousel-slide:nth-child(3) { animation-delay: 8s; }
 .carousel-slide:nth-child(4) { animation-delay: 12s; }
 .carousel-slide:nth-child(5) { animation-delay: 16s; }
 .carousel-slide:nth-child(6) { animation-delay: 20s; }
 .carousel-slide:nth-child(7) { animation-delay: 24s; }
+/* Equal 4s slots; fade-out overlaps into the next slide so nothing shows between */
 @keyframes welcome-fade {
   0% { opacity: 0; }
-  4%, 12.5% { opacity: 1; }
-  16.5%, 100% { opacity: 0; }
+  3% { opacity: 1; }
+  11.5% { opacity: 1; }
+  16.5% { opacity: 0; }
+  100% { opacity: 0; }
 }
 .welcome-copy h2 { font-size: clamp(1.45rem, 2.6vw, 1.9rem); }
 .welcome-copy > p { color: var(--muted); }
@@ -820,5 +825,6 @@ a.svc-card:focus-visible {
   * { transition: none !important; animation: none !important; }
   .hero-video { animation: none; }
   .hero-badge { opacity: 1; }
-  .carousel-slide:not(:first-child) { opacity: 0; }
+  .carousel-slide { opacity: 0; }
+  .carousel-slide:first-child { opacity: 1; }
 }

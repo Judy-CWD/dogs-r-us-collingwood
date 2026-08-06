@@ -482,13 +482,30 @@ a { color: var(--teal-deep); }
 .check-list li { display: flex; align-items: center; gap: 0.6rem; font-weight: 600; }
 .check-list i { color: var(--teal); }
 .hours-chip {
-  display: inline-flex; align-items: center; gap: 0.5rem; flex-wrap: wrap;
-  background: var(--sky); color: var(--teal-ink); font-weight: 700;
-  padding: 0.55rem 1rem; border-radius: 999px; margin: 0;
+  display: inline-flex;
+  align-items: flex-start;
+  gap: 0.65rem;
+  flex-wrap: nowrap;
+  background: var(--sky);
+  color: var(--teal-ink);
+  font-weight: 700;
+  padding: 0.85rem 1.25rem;
+  border-radius: 22px;
+  margin: 0;
   max-width: 100%;
-  line-height: 1.35;
+  line-height: 1.5;
+  text-wrap: pretty;
 }
-.hours-chip i { color: var(--yellow-deep); }
+.hours-chip i {
+  color: var(--yellow-deep);
+  margin-top: 0.2rem;
+  flex-shrink: 0;
+}
+.hours-chip-text {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
 
 /* ---------- Services ---------- */
 .services { padding: clamp(2.5rem, 6vw, 4rem) var(--pad); }
@@ -737,25 +754,14 @@ a.svc-card:focus-visible {
 }
 .contact-hours {
   display: flex;
-  flex-wrap: wrap;
-  column-gap: 0.55rem;
-  row-gap: 0.2rem;
-}
-.contact-hours > span:not(:last-child)::after {
-  content: "·";
-  margin-left: 0.55rem;
-  opacity: 0.7;
+  flex-direction: column;
+  row-gap: 0.3rem;
 }
 .contact-list a { color: var(--white); text-decoration: none; }
 .contact-list a:hover { color: var(--yellow); }
 @media (max-width: 480px) {
   .contact-copy .btn-row { flex-direction: column; align-items: stretch; }
   .contact-copy .btn-row .btn { width: 100%; justify-content: center; }
-  .contact-hours {
-    flex-direction: column;
-    row-gap: 0.25rem;
-  }
-  .contact-hours > span:not(:last-child)::after { content: none; margin: 0; }
 }
 .socials { display: flex; gap: 0.7rem; flex-wrap: wrap; }
 .socials a {

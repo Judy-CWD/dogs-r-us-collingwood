@@ -538,6 +538,14 @@ a { color: var(--teal-deep); }
 @media (min-width: 620px) { .service-grid { grid-template-columns: repeat(2, 1fr); } }
 @media (min-width: 960px) { .service-grid { grid-template-columns: repeat(3, 1fr); } }
 @media (min-width: 960px) { .service-grid-shared { grid-template-columns: repeat(2, 1fr); } }
+@media (min-width: 620px) {
+  .service-grid-shared .svc-card:last-child:nth-child(3) {
+    grid-column: 1 / -1;
+    justify-self: center;
+    width: calc((100% - 1.3rem) / 2);
+    max-width: calc((100% - 1.3rem) / 2);
+  }
+}
 .svc-card {
   position: relative; background: var(--white); border: 1px solid var(--line);
   border-radius: var(--radius); padding: 1.8rem 1.5rem; box-shadow: var(--shadow-sm);

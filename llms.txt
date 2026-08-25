@@ -1,6 +1,6 @@
 # Dogs R Us Collingwood
 
-> Dog daycare in Collingwood, Ontario serving Blue Mountain, Wasaga Beach, Clearview and Thornbury. Small dog daycare, big dog daycare, puppy daycare, dog walking, and dog boarding (little dogs only). Owner-operated by Tracie.
+> Little dog daycare in Collingwood, Ontario serving Blue Mountain, Wasaga Beach, Clearview and Thornbury. Small dog daycare, puppy daycare, dog walking, and dog boarding. Owner-operated by Tracie.
 
 Site: https://dogsruscollingwood.com/
 Preview: https://collingwood-web-design.github.io/dogs-r-us-collingwood-pages/
@@ -14,12 +14,11 @@ Payment: Square at drop-off / e-transfer to Info@DogsRUsCollingwood.com
 
 - Home: /
 - Little Dog Daycare: /little-dog-daycare.html
-- Big Dog Daycare: /big-dog-daycare.html
 - Dog Walking: /dog-walking.html
 
 ## About
 
-Dogs R Us Collingwood offers dog daycare in Collingwood, Ontario with separate small dog daycare and big dog daycare areas. Proudly serving Collingwood, Ontario — including Blue Mountain, Wasaga Beach, Clearview and Thornbury. Big dog daycare is now open. Puppy daycare is available from 4 months with required vaccines. The two size groups never mix. Every dog needs a Meet & Greet and a signed waiver before daycare.
+Dogs R Us Collingwood offers little dog daycare in Collingwood, Ontario for dogs 18″ (paw-to-back) or under. Proudly serving Collingwood, Ontario — including Blue Mountain, Wasaga Beach, Clearview and Thornbury. Puppy daycare is available from 4 months with required vaccines. Every dog needs a Meet & Greet and a signed waiver before daycare.
 
 ## Service area
 
@@ -32,8 +31,8 @@ Dogs R Us Collingwood offers dog daycare in Collingwood, Ontario with separate s
 
 ## Services
 
-- Dog daycare in Collingwood (small dog daycare and big dog daycare) — full day $50, half day $30 (up to 5 hrs), shoppers special $20 (up to 3 hrs); +HST
-- Dog walking (little and big dogs, same rates) — 15 min $10, 30 min $15, 5-walk package $65, 10-walk package $130
+- Little dog daycare in Collingwood — full day $50, half day $30 (up to 5 hrs), shoppers special $20 (up to 3 hrs); +HST
+- Dog walking (little dogs) — 15 min $10, 30 min $15, 5-walk package $65, 10-walk package $130
 - Dog boarding in Collingwood — little dogs only — $75 +HST / 24 hours (includes a full daycare day)
 - Treats R Us — house-made dehydrated single-ingredient treats; shipping available
 

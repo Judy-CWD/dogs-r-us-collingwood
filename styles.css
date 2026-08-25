@@ -555,15 +555,7 @@ a { color: var(--teal-deep); }
 .service-grid { display: grid; gap: 1.3rem; grid-template-columns: 1fr; }
 @media (min-width: 620px) { .service-grid { grid-template-columns: repeat(2, 1fr); } }
 @media (min-width: 960px) { .service-grid { grid-template-columns: repeat(3, 1fr); } }
-@media (min-width: 960px) { .service-grid-shared { grid-template-columns: repeat(2, 1fr); } }
-@media (min-width: 620px) {
-  .service-grid-shared .svc-card:last-child:nth-child(3) {
-    grid-column: 1 / -1;
-    justify-self: center;
-    width: calc((100% - 1.3rem) / 2);
-    max-width: calc((100% - 1.3rem) / 2);
-  }
-}
+@media (min-width: 760px) { .service-grid-shared { grid-template-columns: repeat(3, 1fr); } }
 .svc-card {
   position: relative; background: var(--white); border: 1px solid var(--line);
   border-radius: var(--radius); padding: 1.8rem 1.5rem; box-shadow: var(--shadow-sm);
@@ -642,6 +634,12 @@ a.svc-card:focus-visible {
 .daycare-walks { scroll-margin-top: 100px; }
 
 .price-table-wrap { overflow-x: visible; border-radius: var(--radius); box-shadow: var(--shadow-sm); }
+@media (min-width: 760px) {
+  .price-table-wrap-narrow {
+    width: min(100%, 32rem);
+    margin-inline: auto;
+  }
+}
 .price-table {
   width: 100%; border-collapse: collapse; background: var(--white);
   table-layout: fixed; overflow: hidden; border-radius: var(--radius);

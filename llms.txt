@@ -1,6 +1,6 @@
 # Dogs R Us Collingwood
 
-> Little dog daycare in Collingwood, Ontario serving Blue Mountain, Wasaga Beach, Clearview and Thornbury. Small dog daycare, puppy daycare, dog walking, and dog boarding. Owner-operated by Tracie.
+> Little dog daycare in Collingwood, Ontario serving Blue Mountain, Wasaga Beach, Clearview and Thornbury. Small dog daycare, puppy daycare, and dog boarding. Owner-operated by Tracie.
 
 Site: https://dogsruscollingwood.com/
 Preview: https://collingwood-web-design.github.io/dogs-r-us-collingwood-pages/
@@ -14,7 +14,6 @@ Payment: Square at drop-off / e-transfer to Info@DogsRUsCollingwood.com
 
 - Home: /
 - Little Dog Daycare: /little-dog-daycare.html
-- Dog Walking: /dog-walking.html
 
 ## About
 
@@ -32,7 +31,6 @@ Dogs R Us Collingwood offers little dog daycare in Collingwood, Ontario for dogs
 ## Services
 
 - Little dog daycare in Collingwood — full day $50, half day $30 (up to 5 hrs), shoppers special $20 (up to 3 hrs); +HST
-- Dog walking (little dogs) — 15 min $10, 30 min $15, 5-walk package $65, 10-walk package $130
 - Dog boarding in Collingwood — little dogs only — $75 +HST / 24 hours (includes a full daycare day)
 - Treats R Us — house-made dehydrated single-ingredient treats; shipping available
 

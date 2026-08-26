@@ -555,7 +555,7 @@ a { color: var(--teal-deep); }
 .service-grid { display: grid; gap: 1.3rem; grid-template-columns: 1fr; }
 @media (min-width: 620px) { .service-grid { grid-template-columns: repeat(2, 1fr); } }
 @media (min-width: 960px) { .service-grid { grid-template-columns: repeat(3, 1fr); } }
-@media (min-width: 760px) { .service-grid-shared { grid-template-columns: repeat(3, 1fr); } }
+@media (min-width: 620px) { .service-grid-shared { grid-template-columns: repeat(2, 1fr); } }
 .svc-card {
   position: relative; background: var(--white); border: 1px solid var(--line);
   border-radius: var(--radius); padding: 1.8rem 1.5rem; box-shadow: var(--shadow-sm);
@@ -631,7 +631,7 @@ a.svc-card:focus-visible {
   margin: -0.35rem 0 1.1rem;
   font-size: 0.95rem;
 }
-.daycare-walks { scroll-margin-top: 100px; }
+.daycare-rates { scroll-margin-top: 100px; }
 
 .price-table-wrap { overflow-x: visible; border-radius: var(--radius); box-shadow: var(--shadow-sm); }
 @media (min-width: 760px) {
@@ -688,27 +688,6 @@ a.svc-card:focus-visible {
   .price-table .muted { font-size: 0.72rem; }
 }
 
-.walk-grid { display: grid; gap: 1.1rem; grid-template-columns: repeat(2, 1fr); }
-@media (min-width: 780px) { .walk-grid { grid-template-columns: repeat(4, 1fr); } }
-.walk-card {
-  position: relative; background: var(--white); border-radius: var(--radius);
-  padding: 1.6rem 1rem 1.4rem; text-align: center; box-shadow: var(--shadow-sm);
-  border: 1px solid var(--line);
-}
-.walk-card.featured { background: var(--cream); border-color: rgba(232,154,38,0.35); }
-.walk-ic {
-  width: 54px; height: 54px; margin: 0 auto 0.7rem; border-radius: 16px;
-  display: grid; place-items: center; font-size: 1.3rem; color: var(--teal-deep); background: var(--sky);
-}
-.walk-card.featured .walk-ic { background: var(--yellow); color: var(--teal-ink); }
-.walk-card h3 { font-size: 1.05rem; margin-bottom: 0.3rem; }
-.walk-price { font-family: var(--font-display); font-weight: 700; font-size: 1.45rem; color: var(--yellow-deep); margin: 0; }
-.save {
-  position: absolute; top: -10px; left: 50%; transform: translateX(-50%);
-  background: var(--teal-ink); color: var(--white); font-family: var(--font-body);
-  font-weight: 700; font-size: 0.68rem; letter-spacing: 0.05em; text-transform: uppercase;
-  padding: 0.25rem 0.8rem; border-radius: 999px; white-space: nowrap;
-}
 .pricing-extras { display: grid; gap: 1.1rem; margin-top: 1.6rem; }
 .pricing-extras:has(.extra-card:only-child) { grid-template-columns: 1fr; }
 .pricing-extras .extra-card:only-child { width: 100%; text-align: center; }

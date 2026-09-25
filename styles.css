@@ -468,38 +468,16 @@ a { color: var(--teal-deep); }
   height: 100%;
 }
 .path-card.little { background: linear-gradient(160deg, var(--sky), #dff0f0); }
-.path-card.big { background: linear-gradient(160deg, var(--cream), #ffe9c4); }
 .path-icon {
   width: 74px; height: 74px; margin: 0 auto 1rem; border-radius: 50%;
   display: grid; place-items: center; font-size: 2rem; color: var(--white);
   background: var(--teal); box-shadow: var(--shadow-sm);
 }
-.path-card.big .path-icon { background: var(--yellow-deep); }
 .path-card h2 { font-size: 1.5rem; }
 .path-sub { font-family: var(--font-display); font-weight: 600; color: var(--yellow-deep); margin: 0 0 0.7rem; }
 .path-card.little .path-sub { color: var(--teal-deep); }
 .path-card > p:not(.path-sub) { color: var(--muted); margin: 0; flex: 1 1 auto; }
 .path-card .btn { margin-top: 1.3rem; width: 100%; }
-.ribbon {
-  position: absolute;
-  top: 20px;
-  right: -52px;
-  z-index: 2;
-  width: 168px;
-  padding: 0.45rem 0;
-  transform: rotate(45deg);
-  background: var(--yellow);
-  color: var(--teal-ink);
-  font-family: var(--font-body);
-  font-weight: 700;
-  font-size: 0.75rem;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-  text-align: center;
-  line-height: 1.2;
-  white-space: nowrap;
-  box-shadow: var(--shadow-sm);
-}
 
 /* ---------- Welcome ---------- */
 .welcome { padding: clamp(2rem, 5vw, 3.5rem) 0; }
@@ -583,7 +561,6 @@ a.svc-card:focus-visible {
 .svc-cta h3 { color: var(--white); }
 .svc-cta p { color: rgba(255,255,255,0.85); }
 .svc-cta .svc-ic { margin-inline: auto; background: rgba(255,255,255,0.14); color: var(--yellow); }
-.svc-card .ribbon { top: 14px; }
 
 .svc-book-bar {
   margin-top: 1.3rem;
@@ -658,13 +635,7 @@ a.svc-card:focus-visible {
 .price-table thead th:nth-child(2) { background: var(--teal-deep); }
 .price-table thead th.col-little i,
 .price-table thead th:nth-child(2) i { color: var(--white); }
-.price-table thead th.col-big,
-.price-table thead th:nth-child(3) { background: var(--yellow); color: var(--teal-ink); }
-.price-table thead th.col-big i,
-.price-table thead th:nth-child(3) i { color: var(--teal-ink); }
-.price-table thead th.col-big small { color: var(--teal-ink); opacity: 0.75; }
 .price-table tbody td { padding: 0.95rem 1.2rem; text-align: center; border-top: 1px solid var(--line); font-weight: 700; color: var(--teal-ink); word-wrap: break-word; }
-.price-table tbody td:nth-child(3) { color: var(--yellow-deep); }
 .price-table tbody td:first-child { text-align: left; font-weight: 600; color: var(--ink); }
 .price-table tbody tr:nth-child(even) { background: #fafdfd; }
 .price-table .muted { color: var(--muted); font-weight: 400; font-size: 0.88rem; display: block; }
@@ -830,6 +801,98 @@ a.svc-card:focus-visible {
   max-width: 28rem;
   margin-inline: auto !important;
 }
+
+/* ---------- Specialist detail page (little-dog-daycare) ---------- */
+.page-hero {
+  padding: clamp(2.5rem, 6vw, 4rem) 0 clamp(1.5rem, 3vw, 2rem);
+  text-align: center;
+  background:
+    radial-gradient(ellipse 70% 60% at 50% 0%, rgba(13, 148, 136, 0.12), transparent 60%),
+    linear-gradient(180deg, var(--sky) 0%, var(--white) 100%);
+}
+.page-hero .section-head { margin-bottom: 1.5rem; }
+.page-hero h1 {
+  font-size: clamp(1.85rem, 4vw, 2.55rem);
+  color: var(--teal-ink);
+}
+.detail-section { padding: clamp(2.2rem, 5vw, 3.5rem) 0; }
+.detail-section-alt {
+  background: linear-gradient(180deg, #f4fafa 0%, var(--sky) 100%);
+  padding-block: clamp(2.4rem, 5.5vw, 3.8rem);
+}
+.detail-grid {
+  display: grid;
+  gap: 1.25rem;
+  margin-top: 0.5rem;
+}
+@media (min-width: 720px) {
+  .detail-grid { grid-template-columns: repeat(3, 1fr); }
+}
+.detail-card {
+  background: var(--white);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: 1.35rem 1.4rem;
+  box-shadow: var(--shadow-sm);
+}
+.detail-card h3 {
+  font-size: 1.12rem;
+  margin: 0 0 0.55rem;
+  color: var(--teal-ink);
+}
+.detail-card h3 i {
+  color: var(--teal);
+  margin-right: 0.35rem;
+}
+.detail-card p {
+  margin: 0;
+  color: var(--muted);
+  line-height: 1.5;
+}
+.detail-checklist {
+  max-width: 38rem;
+  margin-inline: auto;
+}
+.detail-checklist li { align-items: flex-start; }
+.routine-list {
+  list-style: none;
+  margin: 0 auto 1.5rem;
+  padding: 0;
+  max-width: 36rem;
+  display: grid;
+  gap: 0.85rem;
+  counter-reset: routine;
+}
+.routine-list li {
+  position: relative;
+  padding: 0.95rem 1.1rem 0.95rem 3.4rem;
+  background: var(--white);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-sm);
+  color: var(--muted);
+  line-height: 1.45;
+  counter-increment: routine;
+}
+.routine-list li::before {
+  content: counter(routine);
+  position: absolute;
+  left: 0.85rem;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 1.85rem;
+  height: 1.85rem;
+  border-radius: 50%;
+  background: var(--teal);
+  color: var(--white);
+  font-weight: 700;
+  font-size: 0.9rem;
+  display: grid;
+  place-items: center;
+}
+.routine-list strong { color: var(--teal-ink); }
+.detail-hours { justify-content: center; margin-inline: auto; }
+.doc-links { display: flex; flex-wrap: wrap; gap: 0.75rem; justify-content: center; }
 
 /* ---------- Footer ---------- */
 .site-footer { background: #21484c; color: rgba(255,255,255,0.85); text-align: center; padding: 2.4rem var(--pad); }

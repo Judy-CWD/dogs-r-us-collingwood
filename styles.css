@@ -296,6 +296,18 @@ a { color: var(--teal-deep); }
 @media (min-width: 700px) {
   .hero-duo { gap: 1rem; }
 }
+@media (max-width: 599px) {
+  .hero-duo {
+    width: auto;
+    margin-inline: calc(0.5rem - var(--pad));
+    gap: 0.4rem;
+  }
+  .hero-duo .hero-video-frame,
+  .hero-duo .hero-carousel-frame {
+    border-width: 4px;
+    aspect-ratio: 4 / 5.6;
+  }
+}
 .hero-media { position: relative; margin: 0; min-width: 0; }
 .hero-copy {
   margin: 0;

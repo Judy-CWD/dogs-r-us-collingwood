@@ -886,6 +886,10 @@ a.svc-card:focus-visible {
 .routine-list strong { color: var(--teal-ink); }
 .detail-hours { justify-content: center; margin-inline: auto; }
 .doc-links { display: flex; flex-wrap: wrap; gap: 0.75rem; justify-content: center; }
+.welcome-copy .doc-links {
+  justify-content: flex-start;
+  margin: 0.35rem 0 1.1rem;
+}
 
 /* ---------- Footer ---------- */
 .site-footer { background: #21484c; color: rgba(255,255,255,0.85); text-align: center; padding: 2.4rem var(--pad); }

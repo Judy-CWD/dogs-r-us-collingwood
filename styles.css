@@ -1225,6 +1225,22 @@ a.detail-card-link:focus-visible {
 .site-footer { background: #21484c; color: rgba(255,255,255,0.85); text-align: center; padding: 2.4rem var(--pad); }
 .site-footer img { margin: 0 auto 0.9rem; width: min(220px, 65vw); height: auto; }
 .site-footer p { margin: 0.3rem 0; font-size: 0.92rem; line-height: 1.45; max-width: 28rem; margin-inline: auto; }
+.footer-docs {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.35rem 1.1rem;
+  margin: 0.85rem 0 0.55rem;
+  padding: 0;
+  list-style: none;
+}
+.footer-docs a {
+  color: rgba(255,255,255,0.92);
+  font-weight: 700;
+  font-size: 0.92rem;
+  text-decoration: none;
+}
+.footer-docs a:hover { color: var(--yellow); }
 .credit { font-size: 0.85rem !important; padding-inline: 0.5rem; }
 .credit a { color: var(--yellow); font-weight: 700; text-decoration: none; }
 

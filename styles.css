@@ -953,10 +953,45 @@ a.detail-card-link:focus-visible {
   line-height: 1.5;
 }
 .detail-checklist {
-  max-width: 38rem;
-  margin-inline: auto;
+  max-width: 42rem;
+  margin: 1.4rem auto 1.6rem;
+  justify-items: center;
+  gap: 0.75rem;
 }
-.detail-checklist li { align-items: flex-start; }
+.detail-checklist li {
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  max-width: 100%;
+}
+.detail-checklist li span {
+  text-wrap: pretty;
+}
+.detail-checklist .nowrap,
+.detail-checklist strong.nowrap {
+  white-space: nowrap;
+}
+.detail-checklist i {
+  flex-shrink: 0;
+  font-size: 1.15em;
+  animation: detail-check-in 0.55s cubic-bezier(0.2, 0.85, 0.25, 1) both,
+             detail-check-pulse 2.6s ease-in-out 0.7s infinite;
+}
+.detail-checklist li:nth-child(1) i { animation-delay: 0.05s, 0.75s; }
+.detail-checklist li:nth-child(2) i { animation-delay: 0.12s, 0.9s; }
+.detail-checklist li:nth-child(3) i { animation-delay: 0.19s, 1.05s; }
+.detail-checklist li:nth-child(4) i { animation-delay: 0.26s, 1.2s; }
+.detail-checklist li:nth-child(5) i { animation-delay: 0.33s, 1.35s; }
+.detail-checklist li:nth-child(6) i { animation-delay: 0.4s, 1.5s; }
+@keyframes detail-check-in {
+  from { opacity: 0; transform: scale(0.35); }
+  70% { opacity: 1; transform: scale(1.18); }
+  to { opacity: 1; transform: scale(1); }
+}
+@keyframes detail-check-pulse {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.12); }
+}
 .routine-list {
   list-style: none;
   margin: 0 auto 1.5rem;
@@ -1177,4 +1212,5 @@ a.detail-card-link:focus-visible {
   .hero-video { animation: none; }
   .carousel-slide { opacity: 0; }
   .carousel-slide:first-child { opacity: 1; }
+  .detail-checklist i { opacity: 1; transform: none; }
 }

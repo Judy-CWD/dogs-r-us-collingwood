@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en-CA">
+<head>
+  <script>
+    /* Keep assets/links working when the browser URL is a missing nested path (GitHub Pages). */
+    (function () {
+      var base = "/";
+      if (/\.github\.io$/i.test(location.hostname)) {
+        var m = location.pathname.match(/^(\/[^/]+)/);
+        if (m) base = m[1] + "/";
+      }
+      var el = document.createElement("base");
+      el.href = location.origin + base;
+      document.head.insertBefore(el, document.head.firstChild);
+    })();
+  </script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Page Not Found | Dogs R Us Collingwood</title>
+  <meta name="description" content="That page isn’t here — find little dog daycare, boarding, agility and the online waiver at Dogs R Us Collingwood.">
+  <meta name="robots" content="noindex, follow">
+  <meta name="theme-color" content="#0d9488">
+  <link rel="icon" href="https://media.cwd-cdn.com/dogs-r-us-collingwood/images/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="https://media.cwd-cdn.com/dogs-r-us-collingwood/images/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lora:wght@500;600;700&family=Lato:wght@400;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="error-page">
+  <a class="skip-link" href="#main">Skip to main content</a>
+  <header>
+  <div class="topbar">
+    <div class="topbar-inner">
+      <a class="topbar-phone" href="tel:7056064145"><i class="fa-solid fa-phone" aria-hidden="true"></i> 705-606-4145</a>
+      <div class="topbar-socials" aria-label="Social media">
+        <a href="https://www.facebook.com/profile.php?id=61563112560390" target="_blank" rel="noopener" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+        <a href="https://www.instagram.com/dogsruscollingwoodon/" target="_blank" rel="noopener" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+        <a href="https://www.youtube.com/@dogsruscollingwood" target="_blank" rel="noopener" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+      </div>
+    </div>
+  </div>
+
+  <div class="site-header">
+    <div class="header-inner">
+      <a class="logo" href="./">
+        <img src="https://media.cwd-cdn.com/dogs-r-us-collingwood/images/logo-mark.png" alt="Dogs R Us Collingwood dog daycare logo" width="180" height="96">
+      </a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+      <nav id="site-nav" class="nav" aria-label="Primary">
+        <a href="little-dog-daycare">Daycare</a>
+        <a href="agility-room">Agility</a>
+        <a href="./#pricing">Pricing</a>
+        <a href="./#faq">F.A.Q.</a>
+        <a href="./#contact">Contact</a>
+        <a class="nav-cta" href="sms:7056064145"><i class="fa-solid fa-comment-dots" aria-hidden="true"></i> Text Tracie</a>
+      </nav>
+    </div>
+  </div>
+  </header>
+
+  <main id="main">
+    <section class="page-hero error-hero" aria-labelledby="error-heading">
+      <div class="wrap narrow">
+        <div class="section-head">
+          <span class="kicker kicker-teal">404</span>
+          <h1 id="error-heading">Whoops — this trail went cold</h1>
+          <p class="section-sub">That page isn’t here. Try one of these, or text Tracie and she’ll point you the right way.</p>
+        </div>
+        <div class="btn-row" style="justify-content:center">
+          <a class="btn btn-lg" href="./"><i class="fa-solid fa-house" aria-hidden="true"></i> Home</a>
+          <a class="btn btn-lg btn-ghost" href="sms:7056064145"><i class="fa-solid fa-comment-dots" aria-hidden="true"></i> Text Tracie</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="error-links wrap" aria-labelledby="error-links-heading">
+      <h2 id="error-links-heading" class="visually-hidden">Helpful links</h2>
+      <div class="error-link-grid">
+        <a class="error-link-card" href="little-dog-daycare">
+          <i class="fa-solid fa-dog" aria-hidden="true"></i>
+          <span>Little Dog Daycare</span>
+        </a>
+        <a class="error-link-card" href="agility-room">
+          <i class="fa-solid fa-person-running" aria-hidden="true"></i>
+          <span>Agility Room</span>
+        </a>
+        <a class="error-link-card" href="./#pricing">
+          <i class="fa-solid fa-tags" aria-hidden="true"></i>
+          <span>Pricing</span>
+        </a>
+        <a class="error-link-card" href="waiver">
+          <i class="fa-solid fa-file-signature" aria-hidden="true"></i>
+          <span>Waiver</span>
+        </a>
+        <a class="error-link-card" href="./#faq">
+          <i class="fa-solid fa-circle-question" aria-hidden="true"></i>
+          <span>FAQ</span>
+        </a>
+        <a class="error-link-card" href="./#contact">
+          <i class="fa-solid fa-location-dot" aria-hidden="true"></i>
+          <span>Contact</span>
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <img src="https://media.cwd-cdn.com/dogs-r-us-collingwood/images/logo-footer.png" alt="Dogs R Us Collingwood dog daycare in Collingwood Ontario" width="220" height="52">
+    <p>Big Fun For Little Dogs</p>
+    <nav class="footer-docs" aria-label="Documents">
+      <a href="waiver">Waiver</a>
+      <a href="https://media.cwd-cdn.com/dogs-r-us-collingwood/docs/policy.pdf" target="_blank" rel="noopener">Policy</a>
+    </nav>
+    <p class="credit">© <span id="year">2026</span> Dogs R Us Collingwood · Designed by <a href="https://collingwoodwebdesign.com" rel="noopener">Collingwood Web Design</a></p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>

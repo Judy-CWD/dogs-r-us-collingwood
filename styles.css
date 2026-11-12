@@ -894,26 +894,28 @@ a.svc-card:focus-visible {
 }
 
 /* ---------- 404 ---------- */
-.error-hero { padding-bottom: 1rem; }
-.error-links { padding: 0 0 clamp(2.5rem, 6vw, 4rem); }
+.error-hero { padding-bottom: 1.5rem; }
+.error-links {
+  padding: 0.5rem 0 clamp(2.8rem, 6vw, 4.25rem);
+  text-align: center;
+}
 .error-link-grid {
-  display: grid;
-  gap: 0.9rem;
-  grid-template-columns: 1fr;
-  max-width: 40rem;
-  margin-inline: auto;
-}
-@media (min-width: 520px) {
-  .error-link-grid { grid-template-columns: 1fr 1fr; }
-}
-@media (min-width: 820px) {
-  .error-link-grid { grid-template-columns: repeat(3, 1fr); max-width: 52rem; }
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: stretch;
+  gap: 1rem 1.15rem;
+  max-width: 44rem;
+  margin: 1.25rem auto 0;
+  padding-inline: 0.25rem;
 }
 .error-link-card {
-  display: flex;
+  display: inline-flex;
   align-items: center;
-  gap: 0.75rem;
-  padding: 1rem 1.15rem;
+  justify-content: center;
+  gap: 0.65rem;
+  min-width: min(100%, 12.5rem);
+  padding: 1.05rem 1.35rem;
   border-radius: var(--radius);
   border: 1px solid var(--line);
   background: linear-gradient(160deg, var(--sky), #f7fbfb);
@@ -926,8 +928,9 @@ a.svc-card:focus-visible {
 .error-link-card i {
   color: var(--teal);
   font-size: 1.15rem;
-  width: 1.4rem;
+  width: 1.25rem;
   text-align: center;
+  flex-shrink: 0;
 }
 .error-link-card:hover {
   transform: translateY(-2px);

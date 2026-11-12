@@ -736,6 +736,11 @@ a.svc-card:focus-visible {
 }
 
 .pricing-extras { display: grid; gap: 1.1rem; margin-top: 1.6rem; }
+@media (min-width: 720px) {
+  .pricing-extras:not(:has(.extra-card:only-child)) {
+    grid-template-columns: 1fr 1fr;
+  }
+}
 .pricing-extras:has(.extra-card:only-child) { grid-template-columns: 1fr; }
 .pricing-extras .extra-card:only-child { width: 100%; text-align: center; }
 .extra-card { background: var(--white); border-radius: var(--radius); padding: 1.4rem 1.5rem; box-shadow: var(--shadow-sm); border: 1px solid var(--line); }
@@ -745,6 +750,14 @@ a.svc-card:focus-visible {
 .extra-card h3 i { color: var(--yellow-deep); margin-right: 0.4rem; }
 .extra-card-little h3 i { color: var(--teal-deep); }
 .extra-card p { margin: 0; color: var(--muted); }
+.extra-card p + p { margin-top: 0.7rem; }
+.extra-card strong { color: var(--teal-ink); }
+.extra-card-link a {
+  font-weight: 800;
+  color: var(--teal-deep);
+  text-decoration: none;
+}
+.extra-card-link a:hover { color: var(--teal-ink); text-decoration: underline; }
 .extra-card:only-child p { max-width: 40rem; margin-inline: auto; }
 .fine { color: var(--muted); font-size: 0.92rem; }
 .fine.center { margin-top: 1.3rem; }

@@ -901,8 +901,11 @@ a.svc-card:focus-visible {
   gap: 1.25rem;
   margin-top: 0.5rem;
 }
-@media (min-width: 720px) {
-  .detail-grid { grid-template-columns: repeat(3, 1fr); }
+@media (min-width: 640px) {
+  .detail-grid { grid-template-columns: repeat(2, 1fr); }
+}
+@media (min-width: 980px) {
+  .detail-grid { grid-template-columns: repeat(4, 1fr); }
 }
 .detail-card {
   background: var(--white);
@@ -911,6 +914,30 @@ a.svc-card:focus-visible {
   padding: 1.35rem 1.4rem;
   box-shadow: var(--shadow-sm);
 }
+a.detail-card-link {
+  text-decoration: none;
+  color: inherit;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.18s ease, box-shadow 0.2s ease, border-color 0.18s ease;
+}
+a.detail-card-link:hover {
+  transform: translateY(-3px);
+  box-shadow: var(--shadow);
+  border-color: rgba(79, 138, 144, 0.45);
+}
+a.detail-card-link:focus-visible {
+  outline: 3px solid var(--yellow-deep);
+  outline-offset: 3px;
+}
+.detail-card-cta {
+  margin-top: auto;
+  padding-top: 0.85rem;
+  font-weight: 800;
+  font-size: 0.92rem;
+  color: var(--teal-deep);
+}
+.detail-card-cta i { margin-left: 0.25rem; font-size: 0.85em; }
 .detail-card h3 {
   font-size: 1.12rem;
   margin: 0 0 0.55rem;

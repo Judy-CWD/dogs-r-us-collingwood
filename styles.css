@@ -891,6 +891,168 @@ a.svc-card:focus-visible {
   margin: 0.35rem 0 1.1rem;
 }
 
+/* ---------- Agility room page ---------- */
+.agility-media {
+  padding: 0 0 clamp(2rem, 4vw, 3rem);
+  max-width: min(100% - (var(--pad) * 2), var(--wrap));
+  margin-inline: auto;
+}
+.agility-duo { width: 100%; }
+.agility-carousel .carousel-slide {
+  animation: agility-carousel-fade 12s linear infinite;
+}
+.agility-carousel .carousel-slide:nth-child(1) { animation-delay: 0s; opacity: 1; }
+.agility-carousel .carousel-slide:nth-child(2) { animation-delay: 4s; }
+.agility-carousel .carousel-slide:nth-child(3) { animation-delay: 8s; }
+/* 3 slides × 4s. Hold until the next slide has faded in. */
+@keyframes agility-carousel-fade {
+  0% { opacity: 0; }
+  5% { opacity: 1; }
+  38% { opacity: 1; }
+  43% { opacity: 0; }
+  100% { opacity: 0; }
+}
+.agility-rate-grid {
+  display: grid;
+  gap: 1.25rem;
+  max-width: 48rem;
+  margin-inline: auto;
+}
+@media (min-width: 700px) {
+  .agility-rate-grid { grid-template-columns: 1fr 1fr; }
+}
+.agility-rate-card {
+  background: var(--white);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: 1.5rem 1.4rem;
+  box-shadow: var(--shadow-sm);
+}
+.agility-rate-card h3 {
+  margin: 0 0 0.6rem;
+  font-size: 1.15rem;
+  color: var(--teal-ink);
+}
+.agility-rate-card h3 i { color: var(--teal); margin-right: 0.35rem; }
+.agility-price {
+  margin: 0 0 0.7rem;
+  color: var(--teal-ink);
+  font-size: 1.05rem;
+}
+.agility-price strong {
+  color: var(--yellow-deep);
+  font-size: 1.65rem;
+}
+.agility-price span { color: var(--muted); font-weight: 600; font-size: 0.95rem; }
+.agility-rate-card p:last-child { margin: 0; color: var(--muted); line-height: 1.5; }
+.agility-waiver {
+  padding: clamp(2.4rem, 5vw, 3.6rem) 0;
+  background: linear-gradient(180deg, #e8f4f5 0%, var(--sky) 100%);
+  text-align: center;
+}
+
+/* ---------- Waiver form page ---------- */
+.waiver-page { padding: 0 0 clamp(2.5rem, 6vw, 4rem); }
+.waiver-terms {
+  max-height: min(28rem, 55vh);
+  overflow: auto;
+  padding: 1.25rem 1.35rem;
+  margin: 0 0 1.25rem;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background:
+    linear-gradient(180deg, rgba(255,255,255,0.92), rgba(238,247,247,0.95)),
+    radial-gradient(circle at top left, rgba(143,192,196,0.25), transparent 55%);
+  box-shadow: var(--shadow-sm);
+  -webkit-overflow-scrolling: touch;
+}
+.waiver-terms h3 {
+  margin: 1.1rem 0 0.45rem;
+  font-family: var(--font-display);
+  font-size: 1.05rem;
+  color: var(--teal-ink);
+}
+.waiver-terms h3:first-child { margin-top: 0; }
+.waiver-terms p {
+  margin: 0 0 0.75rem;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: var(--ink);
+}
+.waiver-terms-close {
+  margin-bottom: 0 !important;
+  font-weight: 700;
+  color: var(--teal-ink) !important;
+}
+.waiver-form {
+  margin-top: 1.75rem;
+  padding: 1.5rem 1.35rem 1.6rem;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: var(--cream);
+}
+.waiver-form-grid {
+  display: grid;
+  gap: 1rem;
+}
+@media (min-width: 640px) {
+  .waiver-form-grid { grid-template-columns: 1fr 1fr; }
+}
+.waiver-field {
+  display: grid;
+  gap: 0.35rem;
+  font-weight: 700;
+  font-size: 0.9rem;
+  color: var(--teal-ink);
+}
+.waiver-field-full { grid-column: 1 / -1; }
+.waiver-field input,
+.waiver-field select {
+  width: 100%;
+  padding: 0.7rem 0.85rem;
+  border: 1px solid rgba(35, 75, 79, 0.22);
+  border-radius: 12px;
+  background: var(--white);
+  color: var(--ink);
+  font: inherit;
+  font-weight: 400;
+}
+.waiver-field input:focus-visible,
+.waiver-field select:focus-visible {
+  outline: 3px solid var(--yellow-deep);
+  outline-offset: 2px;
+  border-color: var(--teal);
+}
+.waiver-agree {
+  display: flex;
+  gap: 0.75rem;
+  align-items: flex-start;
+  margin: 1.25rem 0 1.35rem;
+  padding: 0.95rem 1rem;
+  border-radius: 14px;
+  background: rgba(79, 138, 144, 0.12);
+  border: 1px solid rgba(79, 138, 144, 0.28);
+  font-size: 0.95rem;
+  line-height: 1.45;
+  color: var(--ink);
+  cursor: pointer;
+}
+.waiver-agree input {
+  width: 1.2rem;
+  height: 1.2rem;
+  margin-top: 0.15rem;
+  flex-shrink: 0;
+  accent-color: var(--teal-deep);
+}
+.waiver-form > .btn { width: 100%; justify-content: center; }
+.waiver-status {
+  min-height: 1.4em;
+  margin: 0.9rem 0 0;
+  font-weight: 700;
+  color: var(--teal-ink);
+  text-align: center;
+}
+
 /* ---------- Footer ---------- */
 .site-footer { background: #21484c; color: rgba(255,255,255,0.85); text-align: center; padding: 2.4rem var(--pad); }
 .site-footer img { margin: 0 auto 0.9rem; width: min(220px, 65vw); height: auto; }
